@@ -1,5 +1,5 @@
 <?php
-namespace Homer\Rpc;
+namespace Lawoole\Homer\Rpc;
 
 use Closure;
 
@@ -8,10 +8,10 @@ interface MiddlewareInterface
     /**
      * 处理调用
      *
-     * @param \Homer\Rpc\InvocationInterface $invocation
+     * @param \Lawoole\Homer\Rpc\InvocationInterface $invocation
      * @param \Closure $next
      *
-     * @return \Homer\Rpc\ResultInterface
+     * @return \Lawoole\Homer\Rpc\ResultInterface
      */
     public function handle(InvocationInterface $invocation, Closure $next);
 }

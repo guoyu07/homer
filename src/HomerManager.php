@@ -1,5 +1,5 @@
 <?php
-namespace Homer;
+namespace Lawoole\Homer;
 
 class HomerManager
 {

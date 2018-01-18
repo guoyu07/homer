@@ -1,7 +1,7 @@
 <?php
-namespace Homer\Rpc;
+namespace Lawoole\Homer\Rpc;
 
-use Homer\HomerException;
+use Lawoole\Homer\HomerException;
 
 class RpcException extends HomerException
 {

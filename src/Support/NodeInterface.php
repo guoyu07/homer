@@ -1,12 +1,12 @@
 <?php
-namespace Homer\Support;
+namespace Lawoole\Homer\Support;
 
 interface NodeInterface
 {
     /**
      * 获得 Url
      *
-     * @return \Homer\Support\Url
+     * @return \Lawoole\Homer\Support\Url
      */
     public function getUrl();
 

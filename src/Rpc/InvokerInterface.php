@@ -1,5 +1,5 @@
 <?php
-namespace Homer\Rpc;
+namespace Lawoole\Homer\Rpc;
 
 use Homer\Support\NodeInterface;
 
@@ -15,9 +15,9 @@ interface InvokerInterface extends NodeInterface
     /**
      * 执行调用
      *
-     * @param \Homer\Rpc\InvocationInterface $invocation
+     * @param \Lawoole\Homer\Rpc\InvocationInterface $invocation
      *
-     * @return \Homer\Rpc\ResultInterface
+     * @return \Lawoole\Homer\Rpc\ResultInterface
      */
     public function invoke(InvocationInterface $invocation);
 }

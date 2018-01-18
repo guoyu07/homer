@@ -1,5 +1,5 @@
 <?php
-namespace Homer\Rpc;
+namespace Lawoole\Homer\Rpc;
 
 interface ResultInterface
 {

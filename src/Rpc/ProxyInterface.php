@@ -1,12 +1,12 @@
 <?php
-namespace Homer\Rpc;
+namespace Lawoole\Homer\Rpc;
 
 interface ProxyInterface
 {
     /**
      * 获得调用器
      *
-     * @return \Homer\Rpc\InvokerInterface
+     * @return \Lawoole\Homer\Rpc\InvokerInterface
      */
     public function getInvoker();
 

@@ -1,7 +1,7 @@
 <?php
-namespace Homer\Transport;
+namespace Lawoole\Homer\Transport;
 
-use Homer\HomerException;
+use Lawoole\Homer\HomerException;
 
 class TransportException extends HomerException
 {

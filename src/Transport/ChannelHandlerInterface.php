@@ -20,7 +20,7 @@ interface ChannelHandlerInterface
     public function onClose(ChannelInterface $channel);
 
     /**
-     * 向输通道中收到数据时调用
+     * 向输通道中发送数据时调用
      *
      * @param \Lawoole\Homer\Transport\ChannelInterface $channel
      * @param mixed $message

@@ -6,21 +6,21 @@ use Throwable;
 interface ChannelHandlerInterface
 {
     /**
-     * 传输通道连入时调用
+     * 连接连入时调用
      *
      * @param \Lawoole\Homer\Transport\ChannelInterface $channel
      */
     public function onConnect(ChannelInterface $channel);
 
     /**
-     * 传输通道关闭时调用
+     * 连接关闭时调用
      *
      * @param \Lawoole\Homer\Transport\ChannelInterface $channel
      */
     public function onClose(ChannelInterface $channel);
 
     /**
-     * 向输通道中发送数据时调用
+     * 发送数据完成时调用
      *
      * @param \Lawoole\Homer\Transport\ChannelInterface $channel
      * @param mixed $message
@@ -28,7 +28,7 @@ interface ChannelHandlerInterface
     public function onSend(ChannelInterface $channel, $message);
 
     /**
-     * 从传输通道中收到数据时调用
+     * 收到数据时调用
      *
      * @param \Lawoole\Homer\Transport\ChannelInterface $channel
      * @param mixed $message
@@ -36,7 +36,7 @@ interface ChannelHandlerInterface
     public function onReceive(ChannelInterface $channel, $message);
 
     /**
-     * 传输通道内出现异常时调用
+     * 连接出现异常时调用
      *
      * @param \Lawoole\Homer\Transport\ChannelInterface $channel
      * @param \Throwable $throwable

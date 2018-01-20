@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": ">=7.0",
+        "lawoole/swoole": "~0.1",
         "illuminate/container": "~5.4",
         "illuminate/support": "~5.4",
         "monolog/monolog": "~1.20"

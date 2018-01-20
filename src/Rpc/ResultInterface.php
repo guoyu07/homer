@@ -44,9 +44,9 @@ interface ResultInterface
      * 获得附加信息
      *
      * @param string $key
-     * @param mixed $default
+     * @param string $default
      *
-     * @return mixed
+     * @return string
      */
     public function getAttachment($key, $default = null);
 }

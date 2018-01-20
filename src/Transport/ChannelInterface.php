@@ -10,6 +10,10 @@ interface ChannelInterface extends EndpointInterface
      */
     public function getRemoteAddress();
 
-
+    /**
+     * 判断连接是否已经建立
+     *
+     * @return bool
+     */
     public function isConnected();
 }

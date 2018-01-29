@@ -13,27 +13,11 @@ class HomerManager
     protected $container;
 
     /**
-     * Homer 配置
+     * 配置
      *
      * @var array
      */
     protected $config;
-
-    /**
-     * 是否已经初始化
-     *
-     * @var bool
-     */
-    protected $bootstrapped = false;
-
-    /**
-     * 初始化列表
-     *
-     * @var array
-     */
-    protected $bootstraps = [
-        Concern\Bootstraps\LogBootstrap::class
-    ];
 
     /**
      * 创建 Homer 管理对象
@@ -48,37 +32,9 @@ class HomerManager
     }
 
     /**
-     * 执行初始化
+     * 启动 Homer
      */
-    protected function bootstrap()
+    public function start()
     {
-        if ($this->bootstrapped) {
-            return;
-        }
-
-        $this->bootstrapped = true;
-
-        foreach ($this->bootstraps as $bootstrap) {
-            // 实例化初始化过程
-            $bootstrap = $this->container->make($bootstrap);
-
-            $bootstrap->bootstrap($this->container, $this->config);
-        }
-    }
-
-    /**
-     *
-     */
-    public function prepare()
-    {
-
-    }
-
-    /**
-     *
-     */
-    public function serve()
-    {
-
     }
 }

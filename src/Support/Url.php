@@ -96,7 +96,7 @@ class Url
      *
      * @param string $url
      *
-     * @return \Homer\Support\Url
+     * @return \Lawoole\Homer\Support\Url
      */
     public static function valueOf($url)
     {

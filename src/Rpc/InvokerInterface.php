@@ -1,7 +1,7 @@
 <?php
 namespace Lawoole\Homer\Rpc;
 
-use Homer\Support\NodeInterface;
+use Lawoole\Homer\Support\NodeInterface;
 
 interface InvokerInterface extends NodeInterface
 {
